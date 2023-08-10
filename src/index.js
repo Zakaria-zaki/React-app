@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const reactElement = React.createElement('h1', { className: 'my-class' }, 'Hello World');
+
+const tree = React.createElement('div', { className: 'my-class-div' }, reactElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  tree
 );
 
 // If you want to start measuring performance in your app, pass a function
