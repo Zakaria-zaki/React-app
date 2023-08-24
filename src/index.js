@@ -6,12 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// const reactElement = React.createElement('h1', { className: 'my-class' }, 'Hello World');
-
-// const tree = React.createElement('div', { className: 'my-class-div' }, reactElement);
-
-// const h1 = <h1 className='my-class'> Hello world JSX !</h1>
-
 const composant = () => {
   return <h1 className='my-class-2'> Hello World JSX !! </h1>
 }
@@ -20,7 +14,4 @@ root.render(
   composant()
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
