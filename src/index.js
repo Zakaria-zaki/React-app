@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const composant = () => {
-  return <h1 className='my-class-2'> Hello World JSX !! </h1>
+function HelloTwo() {
+  return <h2>Hello From the seconds components</h2>
 }
 
-root.render(
-  composant()
-);
+function Hello() {
+  return <>
+  <h1>Hello World first components</h1>
+  <HelloTwo></HelloTwo>
+</>
+}
 
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <Hello />
+);
