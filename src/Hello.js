@@ -1,8 +1,8 @@
+import './Hello.css'
 export function Hello(props) {
     return  (
         <>
-        <h1>Hello World {props.name} first components {props.age}</h1>
-        { props.children }
+        <h1 className="title">Hello World !</h1>
         </>
     )
 }
